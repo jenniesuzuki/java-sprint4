@@ -93,6 +93,6 @@ public class ClienteResource {
         if (isAuthenticated) {
             return Response.ok(true).build();
         }
-        return Response.ok(false).build();
+        return Response.ok(false).status(400).build();
     }
 }
