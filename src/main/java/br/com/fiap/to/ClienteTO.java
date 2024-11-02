@@ -9,7 +9,7 @@ public class ClienteTO {
     @NotBlank
     private String nome;
     @NotBlank
-    @Size(min = 8, max = 11, message = "O telefone deve ter entre 8 e 11 dígitos!")
+    @Size(min = 11, max = 11, message = "O telefone deve ter 11 dígitos!")
     private String telefone;
     @NotBlank
     @Size(min = 8, message = "A senha deve ter pelo menos 8 dígitos.")
@@ -19,7 +19,7 @@ public class ClienteTO {
     public ClienteTO() {
     }
 
-    public ClienteTO(@Size(min = 11, max = 11, message = "O CPF deve ter 11 dígitos.") String cpf, @NotBlank String nome, @NotBlank @Size(min = 8, max = 11, message = "O telefone deve ter entre 8 e 11 dígitos!") String telefone, @NotBlank @Size(min = 8, message = "A senha deve ter pelo menos 8 dígitos.") String senha) {
+    public ClienteTO(@Size(min = 11, max = 11, message = "O CPF deve ter 11 dígitos.") String cpf, @NotBlank String nome, @NotBlank @Size(min = 11, max = 11, message = "O telefone deve ter 11 dígitos!") String telefone, @NotBlank @Size(min = 8, message = "A senha deve ter pelo menos 8 dígitos.") String senha) {
         this.cpf = cpf;
         this.nome = nome;
         this.telefone = telefone;
